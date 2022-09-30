@@ -5,7 +5,7 @@ agent{
 }
 
 	stages{
-		stage('install apache'){
+		/* stage('install apache'){
 			steps{
 				sh 'yum install httpd -y'
 			}
@@ -15,7 +15,7 @@ agent{
 				sh 'service httpd start'
 			}
 		
-		}
+		}*/
 		stage ('deploy apache'){
 			steps{
 				sh 'cp -r index.html /var/www/html'
